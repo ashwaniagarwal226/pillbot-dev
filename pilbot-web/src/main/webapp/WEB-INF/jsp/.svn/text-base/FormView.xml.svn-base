@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE
+ tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"
+	>
+	
+<tiles-definitions>
+	
+	 <!--  Leave Module -->
+    <definition name="formMain" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/formMain.jsp"/>
+	</definition>
+	
+	<definition name="adminOpinionRejectedLeaves" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/Reports/adminOpinionRejectedLeaves.jsp"/>
+	</definition>
+	
+	<definition name="adminRejectAppliedLeaveList" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/Reports/adminRejectAppliedLeaveList.jsp"/>
+	</definition>
+	
+	<definition name="employeeLeaveBalanceView" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/Reports/employeeLeaveBalanceView.jsp"/>
+	</definition>
+	
+	<definition name="employeeLeaveOpeningApproveView" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/Reports/employeeLeaveOpeningApproveView.jsp"/>
+	</definition>
+	
+	
+	<definition name="cancellationAppliedLeave" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/cancellationAppliedLeave.jsp"/>
+	</definition>
+	
+	<definition name="adminCancellationAppliedLeave" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/adminCancellationAppliedLeave.jsp"/>
+	</definition>
+	
+		<definition name="adminCancellationAppliedLeaveList" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/adminCancellationAppliedLeaveList.jsp"/>
+	</definition>
+	
+	<definition name="openingClosingReport" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/openingClosingReport.jsp"/>
+	</definition>
+	
+    
+    <definition name="addDepartment" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/addDepartment.jsp"/>
+	</definition>
+	
+	<definition name="updateDepartmentMasterForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/updateDepartmentMasterForm.jsp"/>
+	</definition>
+	
+	 <definition name="addDesignation" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/addDesignation.jsp"/>
+	</definition>
+	
+	<definition name="updateDesignationMasterForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/updateDesignationMasterForm.jsp"/>
+	</definition>
+	
+	 <definition name="addEmployeeDeptDesign" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/addEmployeeDeptDesign.jsp"/>
+	</definition>
+	 
+	  <definition name="updateEmpDeptDesigMasterForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/updateEmpDeptDesigMasterForm.jsp"/>
+	</definition>
+	 
+	 <definition name="leaveMasterForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/leaveMasterForm.jsp"/>
+	</definition>
+	
+	<definition name="leaveMasterUpdateForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/leaveMasterUpdateForm.jsp"/>
+	</definition>
+	
+	<definition name="leaveRuleMasterForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/leaveRuleMasterForm.jsp"/>
+	</definition>
+	
+	<definition name="updateLeaveRuleMasterForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/updateLeaveRuleMasterForm.jsp"/>
+	</definition>
+	
+	
+	<definition name="leaveApproveRejectForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/leaveApproveRejectForm.jsp"/>
+	</definition>
+	
+	<definition name="leaveApproveRejectListForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/leaveApproveRejectListForm.jsp"/>
+	</definition>
+	
+	<definition name="encashLeaveApproveRejectForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/encashLeaveApproveRejectForm.jsp"/>
+	</definition>
+	
+	<definition name="encashLeaveApproveRejectListForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/encashLeaveApproveRejectListForm.jsp"/>
+	</definition>
+	
+	<definition name="adminEmpLeaveForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/adminEmpLeaveForm.jsp"/>
+	</definition>
+	
+	
+	<definition name="addEmployee" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/addEmployee.jsp"/>
+	</definition>
+	
+	<definition name="addLeave" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/addLeave.jsp"/>
+	</definition>
+	
+	<definition name="leaveForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/leaveForm.jsp"/>
+	</definition>
+	
+ 
+ 
+	   <!-- ***********Added To upload Holiday Detail yearwise***********     -->
+	
+ 
+	<definition name="addFamilyMemberScreen" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/adminMaster/FamilyMember/addFamilyMember.jsp"/>
+	</definition>
+ 
+	<definition name="leaveApplyForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/leaveApplyForm.jsp"/>
+	</definition>
+
+
+	<definition name="holidayMasterForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/holidayMasterForm.jsp"/>
+	</definition>
+
+	<definition name="addEmployeeProfile" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/addEmployeeProfile.jsp"/>
+	</definition>
+
+ 
+ 
+	<definition name="uploadFile" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/uploadFile.jsp"/>
+	</definition>
+	
+		<definition name="uploadFileSuccess" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/uploadFileSuccess.jsp"/>
+	</definition>
+	
+	<definition name="uploadFileFail" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/uploadFileFail.jsp"/>
+	</definition>
+	
+	<!-- holiday Detail data entry master view -->
+	<definition name="holidayDetailEntryForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/holidayDetailEntryForm.jsp"/>
+	</definition>
+ 
+ 	<definition name="updateHolidayDetailForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/updateHolidayDetailForm.jsp"/>
+	</definition>
+	
+	<!-- Update employee profile -->
+	<definition name="updateEmployeeProfile" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/updateEmployeeProfile.jsp"/>
+	</definition>
+	
+	<!-- Family Member Master -->
+	<definition name="addFamilyMemberScreen" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/adminMaster/FamilyMember/addFamilyMember.jsp"/>
+	</definition>
+	
+	<definition name="updateFamilyMemberScreen" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/adminMaster/FamilyMember/updateFamilyMember.jsp"/>
+	</definition>
+	
+	<definition name="updateFamilyMemberDetailsForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/adminMaster/FamilyMember/updateFamilyMemberDetailsForm.jsp"/>
+	</definition>
+	
+	<!-- Nominee Master -->
+	<definition name="addNomineeScreen" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/adminMaster/Nominee/addNominee.jsp"/>
+	</definition>
+	
+	<definition name="updateNomineeScreen" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/adminMaster/Nominee/updateNominee.jsp"/>
+	</definition>
+	
+	<definition name="updateNomineeDetailsForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/adminMaster/Nominee/updateNomineeDetailsForm.jsp"/>
+	</definition>
+	
+	<!-- Employee View Report -->
+	<definition name="employeeViewForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/Reports/employeeDetailsView.jsp"/>
+	</definition>
+	
+	<definition name="employeeProfileView" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/Reports/employeeProfileView.jsp"/>
+	</definition>
+	
+	<definition name="employeeLeaveView" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/Reports/employeeLeaveView.jsp"/>
+	</definition>
+	
+	<definition name="employeeEncashmentView" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/Reports/employeeEncashmentView.jsp"/>
+	</definition>
+	
+	<!-- leave encashment -->
+	<definition name="leaveEncashment" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/leaveEncashment.jsp"/>
+	</definition>
+	
+	<!-- leave deduct details -->
+	<definition name="leaveDeduct" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/leaveDeduct.jsp"/>
+	</definition>
+	
+	<!-- Other benefit details -->
+	<definition name="otherBenefitDetails" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/otherBenefitDetails.jsp"/>
+	</definition>
+	
+	
+	
+	<definition name="approveAuthortiy" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/approveAuthortiy.jsp"/>
+	</definition>
+	
+	<definition name="updateApproverAuthority" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/updateApproverAuthority.jsp"/>
+	</definition>
+	
+	<definition name="updateEmployeeProfileList" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/updateEmployeeProfileList.jsp"/>
+	</definition>
+	<definition name="superAdminUpdateEmployeeProfileList" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/superAdminUpdateEmployeeProfileList.jsp"/>
+	</definition>
+	
+	<definition name="superAdminUpdateEmployeeProfile" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/superAdminUpdateEmployeeProfile.jsp"/>
+	</definition>
+	<definition name="employeeEducationForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/employeeEducationForm.jsp"/>
+	</definition>
+	
+	 <definition name="showEmployeeEducationDetailsForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/showEmployeeEducationDetailsForm.jsp"/>
+	</definition> 
+	
+	 <definition name="showEmployeeEducationList" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/showEmployeeEducationList.jsp"/>
+	</definition> 
+	
+	<definition name="employeeDetailswithEducation" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/employeeDetailswithEducation.jsp"/>
+	</definition> 
+	
+	<definition name="UpdateEmployeeEducationDetailsForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/UpdateEmployeeEducationDetailsForm.jsp"/>
+	</definition> 
+	
+	<definition name="UpdateEmployeeEducation" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/UpdateEmployeeEducation.jsp"/>
+	</definition> 
+	
+	<definition name="updateEmployeeEducationProfileForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/updateEmployeeEducationProfileForm.jsp"/>
+	</definition> 
+	
+	
+	<definition name="viewEmployeeAccountDetails" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/viewEmployeeAccountDetails.jsp"/>
+	</definition> 
+	
+	<definition name="getParticularEmployeeDetails" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/getParticularEmployeeDetails.jsp"/>
+	</definition> 
+	
+	<definition name="viewBalanceLeaves" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/viewBalanceLeaves.jsp"/>
+	</definition> 
+	
+	<definition name="messagePermissions" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/messagePermissions.jsp"/>
+	</definition>
+	
+	  <definition name="calYearly" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/calYearly.jsp"/>
+	</definition> 
+	
+	 <definition name="calPl" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/calPl.jsp"/>
+	</definition> 
+	
+		<definition name="plCalcualtion" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/plCalcualtion.jsp"/>
+	</definition> 
+	
+	<definition name="updateAppliedLeaveView" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/updateAppliedLeaveView.jsp"/>
+	</definition> 
+	
+	<definition name="updateLeaveAppliedForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/updateLeaveAppliedForm.jsp"/>
+	</definition>
+	
+	<definition name="approvalAuthorityForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/approvalAuthorityForm.jsp"/>
+	</definition>
+	
+	<definition name="employeeLeaveViewParticular" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/employeeLeaveViewParticular.jsp"/>
+	</definition>
+	
+	<definition name="viewBalanceLeavesparticular" extends="mainLayout">
+		<put-attribute name="menu" value=""/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/viewBalanceLeavesparticular.jsp"/>
+	</definition> 
+	
+	<definition name="prevoiusComments" extends="mainLayout">
+		<put-attribute name="menu" value=""/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/prevoiusComments.jsp"/>
+	</definition> 
+	
+	<definition name="employeeLeaveHir" extends="mainLayout">
+		<put-attribute name="menu" value=""/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/employeeLeaveHir.jsp"/>
+	</definition> 
+	
+	
+	<definition name="prevoiusCommentsFrEncashment" extends="mainLayout">
+		<put-attribute name="menu" value=""/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/prevoiusCommentsFrEncashment.jsp"/>
+	</definition> 
+	
+	<definition name="adminEmployeeLeaveDetailShow" extends="mainLayout">
+		<put-attribute name="menu" value=""/>
+		<put-attribute name="body" value="/WEB-INF/jsp/Reports/adminEmployeeLeaveDetailShow.jsp"/>
+	</definition>
+	
+	<definition name="viewDetailsParticular" extends="mainLayout">
+		<put-attribute name="menu" value=""/>
+		<put-attribute name="body" value="/WEB-INF/jsp/leave/viewDetailsParticular.jsp"/>
+	</definition> 
+	
+	 <definition name="showLeaveDtlsXls" template="/WEB-INF/jsp/Reports/showLeaveDtlsXls.jsp">  
+    </definition>
+    
+    
+    <definition name="leaveDetailsDates" extends="mainLayout">
+		<put-attribute name="menu" value=""/>
+		<put-attribute name="body" value="/WEB-INF/jsp/Reports/leaveDetailsDates.jsp"/>
+	</definition>
+	<definition name="leaveDetailsDatesXLS" template="/WEB-INF/jsp/Reports/leaveDetailsDatesXLS.jsp">  
+    </definition>
+    
+</tiles-definitions>
+
+
+

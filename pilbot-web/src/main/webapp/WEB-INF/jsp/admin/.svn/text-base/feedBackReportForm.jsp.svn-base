@@ -1,0 +1,176 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title></title>
+
+<link rel="stylesheet"
+type="text/css"
+href="dojo-release-1.0.0/dijit/themes/tundra/tundra.css"/>
+
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<link rel="stylesheet"
+type="text/css"
+href="dojo-release-1.0.0/dijit/themes/tundra/tundra.css"/>
+<link href="../jquery/css/jquery-ui.css" rel="stylesheet" type="text/css"/><style type="text/css">@import url("../jquery/css/jquery-ui.css");</style>
+  <script src="../jquery/js/jquery.min.js"></script><script src="../jquery/js/jquery-ui.min.js"></script><script src="../jquery/js/jquery-ui-1.8.11.custom.min.js"></script>
+   	
+  <script src="/III_WebPortal/calender/datetimepicker_css.js"></script>
+<style type="text/css" media="screen">
+	
+	/*  @import url("<c:url value="/resources/dojo/resources/dojo.css"/>");
+	 @import url("<c:url value="/resources/dijit/themes/tundra/tundra.css"/>"); */
+	
+	
+	 @import url("../styles/style1.css");
+	 @import url("../styles/style2.css");
+</style> 
+
+<script type="text/javascript">
+function isNotEmpty() {
+	if(document.getElementById("searchFromDate").value=="")
+	{
+		alert("Please enter From date");
+		return false;
+	}
+	else if(document.getElementById("searchToDate").value=="")
+	{
+		alert("Please enter To date");
+		return false;
+	}
+	else if (document.getElementById("searchFromDate").value!="" && document.getElementById("searchToDate").value!=""){
+		var start=document.getElementById("searchFromDate").value;
+		var end=document.getElementById("searchToDate").value;	
+					var startDate = start.split("-");
+					var endDate  = end.split("-");
+					var date1 = new Date(startDate[2],startDate[1], startDate[0]); 
+					var date2 = new Date(endDate[2], endDate[1],endDate[0]); 
+   		if(date2<date1){
+			alert("Invalid Date Range!\nStart Date cannot be after End Date!");
+			return false;
+		}else
+		{
+			document.enrollFrm.action = "feedbackResult";
+			document.enrollFrm.submit();
+		}
+	}
+	
+}
+</script>
+
+<script src="../jquery/js/jquery-ui-1.8.11.custom.min.js"></script></head>
+<body id="bd1">
+<div align="center">
+
+   <!--  <div style="width:900px"> -->
+				  <div>
+
+<table border="1" align="left" cellpadding="0" cellspacing="0" class="box" width="100%">
+                      <tr>
+                        
+                          
+                            <td class="TableHeader1" align="left">Feedback Report</td></tr>
+                            <tr>
+                            <td>
+
+<form:form action="" commandName="feedBackCustomClass" id="frm1" name="enrollFrm">
+<TABLE border="1"   class="Table2" width="100%">
+
+<tr>
+<td>From Date<span class="mandatory">*</span></td>
+<td>
+
+<form:input path="searchFromDate" id="searchFromDate" name="searchFromDate" height="15"   readonly="true" value=""/>
+<img src="/III_WebPortal/calender/images2/cal.gif" 
+onclick="javascript:NewCssCal('searchFromDate','ddMMyyyy','','','','','past')" style="cursor:pointer"/>
+</td> 
+
+<td>To Date<span class="mandatory">*</span></td> 
+<td>
+
+<form:input path="searchToDate" id="searchToDate" name="searchToDate" height="15"  readonly="true" value=""/>
+<img src="/III_WebPortal/calender/images2/cal.gif" 
+onclick="javascript:NewCssCal('searchToDate','ddMMyyyy','','','','','past')" style="cursor:pointer"/>
+ </td>
+
+
+
+<td>
+<input type="button" value="Search"  height="5"  onclick="javascript:isNotEmpty();" />
+</td>
+
+</tr>
+</table>	
+</form:form> 
+
+<c:set var="listLength"	value="${fn:length(feedbackList)}"/>
+										<c:if test="${listLength!=0}">
+										
+										<TABLE border="1" align="center" cellpadding="1"
+											cellspacing="1" class="Table2" width="100%">
+
+											<tr>
+												<th>Sr.No.</th>
+												<th width="70px">Name</th>
+												<th>Email Id</th>
+												<th>Contact No</th>
+												<th>Remarks</th>
+												</tr>
+												
+<tr>
+												<c:forEach
+													items="${feedbackList}" var="m"
+													varStatus="i">
+													<tr></tr>
+													<td align="center">${i.count}</td>
+													<td align="left">${m.name}</td>
+													<td align="left">${m.email}</td>
+													<td align="center">${m.contactNo}</td>
+													<td align="left" >${m.remark}</td>
+													</c:forEach></tr>
+</table>
+
+
+
+
+<tr>
+			<td class="TableHeader1">
+				<table border="0" align="left" >
+					<tr>
+						<td><input type="button" value="PDF"  onclick="createFile('FeedbackReportFile/FeedbackReportPDF')"></td>
+						<td><input type="button" value="CSV" onclick="createFile('FeedbackReportFile/FeedbackReportCSV')" disabled="disabled"></td>
+						<td><input type="button" value="XLS" onclick="createFile('FeedbackReportFile/FeedbackReportXLS')"></td>
+					</tr>
+					
+				</table>
+				
+			</td>
+		</tr>
+		</c:if>
+		</td>
+</tr>
+		<c:if test="${message !=null and message !=''}">
+		<tr>
+			<td class="TableHeader1" >
+				<font color="red">${message}</font>
+			</td>
+		</tr>
+		</c:if>
+	</table>
+
+<script type="text/javascript">
+
+function createFile(url){
+	window.location.href=url;
+}
+</script>
+
+</div>
+</div>
+
+</body>
+</html>

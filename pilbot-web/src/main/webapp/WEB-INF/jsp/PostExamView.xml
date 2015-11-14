@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE
+ tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"
+	>
+<tiles-definitions>
+	<!-- Result, Revaluation and Retotaling Starts -->
+   <definition name="revaluation" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/PostExamination/candidateResultAndRevaluation.jsp"></put-attribute>
+	</definition>
+	<definition name="PayOnlineRevalRetotal" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/PostExamination/RERTPayOnline.jsp"></put-attribute>
+	</definition>
+	<definition name="RERTReceipt" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/PostExamination/RERTReceipt.jsp"></put-attribute>
+	</definition>
+	<definition name="RERTStatusPG" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/PostExamination/RERTStatusPG.jsp"></put-attribute>
+	</definition>
+	<definition name="adminResulRevaluation" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/PostExamination/adminResultAndRevaluation.jsp"></put-attribute>
+	</definition>
+	<definition name="RERT_CashReceipt" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/PostExamination/Admin_RERT_CashReceipt.jsp"></put-attribute>
+	</definition>
+	<definition name="RERT_DDReceipt" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/PostExamination/Admin_RERT_DDReceipt.jsp"></put-attribute>
+	</definition>
+	<definition name="resultView" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/PostExamination/ResultView.jsp"></put-attribute>
+	</definition>
+	
+	
+		 
+	<definition name="RERTReport" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/PostExamination/RERTReport.jsp"/>
+	</definition>
+	
+	<definition name="SendForRERT" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/PostExamination/SendForRERT.jsp"/>
+	</definition>
+	
+	
+	<definition name="ReevalandRetotalTrace" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/PostExamination/ReevalandRetotalTrace.jsp"/>
+	</definition>
+	
+	
+	<!-- Result, Revaluation and Retotaling Ends-->
+</tiles-definitions>

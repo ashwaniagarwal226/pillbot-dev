@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE
+ tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"
+	>
+	
+<tiles-definitions>
+	
+	 <!--  Leave Module -->
+    <definition name="formMain" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/formMain.jsp"/>
+	</definition>
+	<!-- PILLbot Starts -->
+	<definition name="saltInfoForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/pillbot/saltInfoForm.jsp"/>
+	</definition>
+	
+	<definition name="editSaltInfoForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/pillbot/editSaltInfoForm.jsp"/>
+	</definition>
+	
+	<definition name="brandInfoForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/pillbot/brandInfoForm.jsp"/>
+	</definition>
+	
+	<definition name="editBrandInfoForm" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/pillbot/editBrandInfoForm.jsp"/>
+	</definition>
+	<!-- PILLbot Ends -->
+</tiles-definitions>
+
+
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<!-- Declare a default view resolver -->
+	<bean id="tilesViewResolver" 
+      class="org.springframework.js.ajax.AjaxUrlBasedViewResolver" p:order="2">  
+    <property name="viewClass" value="org.springframework.webflow.mvc.view.FlowAjaxTilesView" />
+    <property name="prefix" value="/WEB-INF/jsp/*" />
+    <property name="suffix" value=".jsp" />
+	</bean>
+
+
+
+	<!-- 
+	Here we declared two resolvers. The lower numbered order takes higher precedence.
+	This means the XmlViewResolver will be used first by Spring to check if there's 
+	a matching view. If not, it uses InternalResourceViewResolver instead.
+	
+	If we set InternalResourceViewResolver's order to 0, all references to our view reports
+	will be classified as JSP pages instead. This is not what we want. So we put ordering.
+	 -->
+	<!-- 
+	Resolves view names based on the their literal names. These names are then matched
+	inside the /WEB-INF/jsp/ folder. If a match is found, the JSP page is served.
+	Take note of the ordering of this ViewResolver.
+	-->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver" p:order="1">
+		<property name="viewClass">
+			<value>
+				org.springframework.web.servlet.view.tiles2.TilesView
+			</value>
+		</property>
+	</bean>
+	<bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/layouts/layouts.xml</value>
+		        <!-- <value>/WEB-INF/jsp/indexTiles.xml</value>	 -->			
+			  	<value>/WEB-INF/jsp/CPDView.xml</value>
+			  		<value>/WEB-INF/jsp/FormView.xml</value>
+			  		<value>/WEB-INF/jsp/candidate-View.xml</value>
+			  		<value>/WEB-INF/jsp/RegistrationAdminView.xml</value>
+			  		<value>/WEB-INF/jsp/SurveyorsView.xml</value>
+			  		<value>/WEB-INF/jsp/PostExamView.xml</value>
+			  		<!--<value>/WEB-INF/jsp/profileMap/ProfileMapView.xml</value>-->
+			</list>
+		</property>
+	</bean>
+	
+
+	<!--  
+	Resolves view names based on the names declared on the declared xml location
+	All our Jasper views are declared inside the specified xml location.
+	Take note of the ordering of this ViewResolver.
+	 -->
+	<!--  <bean class="org.springframework.web.servlet.view.XmlViewResolver"
+			p:location="/WEB-INF/jasperViews/jasper-views.xml"  p:order="0" /> -->
+	
+
+</beans>

@@ -1,0 +1,225 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="../jquery/css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <style type="text/css">
+  @import url("../jquery/css/jquery-ui.css");
+  </style>
+  <script src="../jquery/js/jquery.min.js"></script>
+  <script src="../jquery/js/jquery-ui.min.js"></script>
+  <script src="../jquery/js/jquery-ui-1.8.11.custom.min.js"></script>
+<style type="text/css">
+.even {
+	background-color: silver;
+}
+</style>
+<title>Employee Profile</title>
+<link rel="stylesheet"
+type="text/css"
+href="dojo-release-1.0.0/dijit/themes/tundra/tundra.css"/>
+<style type="text/css" media="screen">
+	
+	/*  @import url("<c:url value="/resources/dojo/resources/dojo.css"/>");
+	 @import url("<c:url value="/resources/dijit/themes/tundra/tundra.css"/>"); */
+	
+	
+	 @import url("../styles/style1.css");
+</style>
+
+<script type="text/javascript">
+
+
+
+</script>
+
+
+
+
+
+<script src="../jquery/js/jquery-ui-1.8.11.custom.min.js"></script></head>
+<body>
+<div id="Container2">
+<div id="ContentArea" align="left" style="width:586px;">
+<fieldset style="width:578px;">
+<legend align="left"><H3>Employee Data Entry Form</H3></legend>
+<form:form action="add.htm" commandName="emp" >
+
+	<table border="1" align="left" cellpadding="1" cellspacing="1" class="Table2">
+		<tr>
+			<td>Employee ID <font color="red">*</font> :</td>
+			<td><form:input path="employeeId" /></td>
+		</tr>		
+		<tr>			
+			<td>First Name <font color="red">*</font> :</td>
+			<td><form:input path="firstName" /></td>	
+		</tr>
+		<tr>
+			<td>Middle Name :</td>
+			<td><form:input path="middleName" /></td>
+		</tr>
+		<tr>
+			<td>Last Name<font color="red">*</font> :</td>
+			<td><form:input path="lastName" /></td>
+		</tr>
+		<tr>
+			<td class="tableheadertd1"><b>Correspondence Address</b></td>
+			
+		</tr>
+		<tr>
+			<td>Building<font color="red">*</font> :</td>
+			<td><form:input path="corrBuilding" /></td>
+			<td>Street Name <font color="red">*</font> :</td>
+			<td><form:input path="corrStreetname" /></td>
+		</tr>
+		<tr>
+			<td>Landmark :</td>
+			<td><form:input path="corrLandmark" /></td>
+			<td>Area/Locality/Sector :</td>
+			<td><form:input path="corrArea" /></td>			
+		</tr>
+		<tr>
+			<td>Village/Town/City <font color="red">*</font> :</td>
+			<td><form:input path="corrCity" /></td>
+			<td>District <font color="red">*</font> :</td>
+			<td><form:input path="corrDistrict" /></td>
+		</tr>
+		<tr>
+			<td>State <font color="red">*</font> :</td>
+			<td><form:input path="corrState" /></td>
+			<td>Pincode <font color="red">*</font> :</td>
+			<td><form:input path="corrPincode" /></td>
+		</tr>
+		<tr>
+			<td>Country <font color="red">*</font> :</td>
+			<td><form:input path="corrCountry" /></td>
+		</tr>
+		<tr>
+			<td>Mobile No <font color="red">*</font> :</td>
+			<td><form:input path="corrMobile" /></td>
+			<td>Landline No  :</td>
+			<td><form:input path="corrLandline" /></td>
+		</tr>
+		<tr>
+			<td class="tableheadertd1"><b>Permanent Address</b></td>
+			
+		</tr>
+		<tr>
+			<td>Building<font color="red">*</font> :</td>
+			<td><form:input path="perBuilding" /></td>
+			<td>Street Name <font color="red">*</font> :</td>
+			<td><form:input path="perStreetname" /></td>
+		</tr>
+		<tr>
+			<td>Landmark :</td>
+			<td><form:input path="perLandmark" /></td>
+			<td>Area/Locality/Sector :</td>
+			<td><form:input path="perArea" /></td>			
+		</tr>
+		<tr>
+			<td>Village/Town/City <font color="red">*</font> :</td>
+			<td><form:input path="perCity" /></td>
+			<td>District <font color="red">*</font> :</td>
+			<td><form:input path="perDistrict" /></td>
+		</tr>
+		<tr>
+			<td>State <font color="red">*</font> :</td>
+			<td><form:input path="perState" /></td>
+			<td>Pincode <font color="red">*</font> :</td>
+			<td><form:input path="perPincode" /></td>
+		</tr>
+		<tr>
+			<td>Country <font color="red">*</font> :</td>
+			<td><form:input path="perCountry" /></td>
+		</tr>
+		<tr>
+			<td>Mobile No <font color="red">*</font> :</td>
+			<td><form:input path="perMobile" /></td>
+			<td>Landline No  :</td>
+			<td><form:input path="perLandline" /></td>
+		</tr>
+		
+		<tr>
+			<td>Email ID <font color="red">*</font> :</td>
+			<td><form:input path="emailAdd" /></td>
+		</tr>
+		<tr>
+			<td>Marital Status <font color="red">*</font> :</td>
+			
+			<td><form:select path="maritalStatus">
+				<form:option value="Unmarried">Unmarried</form:option>
+				<form:option value="Married">Married</form:option>
+				</form:select>
+			</td>
+		</tr>
+		<tr>
+			<td>Gender <font color="red">*</font> :</td>
+			<td><form:select path="gender">
+				<form:option value="M">Male</form:option>
+				<form:option value="F">Female</form:option>
+				</form:select>
+			</td>
+		</tr>
+		<tr>
+			<td>Category <font color="red">*</font> :</td>
+			<td><form:select path="categorId">
+				<form:option value="1">General</form:option>
+				<form:option value="2">SC/ST</form:option>
+				<form:option value="3">OBC</form:option>
+				</form:select>
+			</td>
+		</tr>
+		<tr>
+			<td>Pan Card No. <font color="red">*</font> :</td>
+			<td><form:input path="panNo" /></td>
+		</tr>
+		<tr>
+			<td>Department Name <font color="red">*</font> :</td>
+			<td><form:select path="departmentCode">
+				<form:option value="1">IT</form:option>
+				<form:option value="2">Exam</form:option>
+				</form:select>
+			</td>
+		</tr>
+		<tr>
+			<td>Department Code <font color="red">*</font> :</td>
+			<td><form:select path="desigCode">
+				<form:option value="3">Leader</form:option>
+				<form:option value="4">Manager</form:option>
+				</form:select>
+			</td>
+		</tr>
+		<tr>
+			<td>Employment Type <font color="red">*</font> :</td>
+			<td><form:select path="employementType">
+				<form:option value="5">Contract</form:option>
+				<form:option value="6">Permanent</form:option>
+				</form:select>		
+			</td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td colspan="4" align="center"><input type="submit" value="Submit"></td>
+		</tr>
+		
+     
+		
+      
+        
+	</table>
+</form:form>
+</fieldset>
+</div>
+</div>
+
+</body>
+</html>

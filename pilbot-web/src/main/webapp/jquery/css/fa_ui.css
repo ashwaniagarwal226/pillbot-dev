@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+
+
+#divOuterMost
+{
+	position:relative;
+	width:100%;
+	height:300px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#divTitle
+{
+	border:none;
+	width:85%;
+	position:relative;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #7C3896;
+ 
+}
+
+#divLoginBox
+{
+	border:none;
+	width:15%;
+	position:relative;
+	float:right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+}
+#divBreadCrump{
+font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;}
+#divContentWrapper{
+	width:100%;
+	height:auto;
+	position:relative;
+	float:left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-size:14px;
+	padding: 0px;
+}
+
+
+#divLeftPane
+{
+	width:20%;
+	height:auto;
+	position:relative;
+	float:left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+  
+}
+#divCenterPane
+{
+	position: relative;	
+	visibility: visible;
+	border: thin solid #8D8D8D;
+	width: 100%;
+	background:#DAE8F8;
+}
+
+#divRightPane
+{
+	float: right;
+	position: relative;
+	visibility: visible;
+	border: thin solid #8D8D8D;
+	width: 80%;
+	background:#FFFFFF;
+}
+
+#menubgColor
+{
+	background:#FFE6FF;
+}

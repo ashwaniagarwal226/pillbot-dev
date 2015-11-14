@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE
+ tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"
+	>
+<tiles-definitions>
+	 
+	
+	 
+	
+	
+	<definition name="surveyorsAdminRegistrationMsg" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/surveyorsAdminRegistrationMsg.jsp"/>
+	</definition>
+	
+	<definition name="surveyorsPaper" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/SurveyorsPaperEnrollment.jsp"/>
+	</definition>
+	
+	<definition name="surveyorsPayment" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/surveyorsPayment.jsp"/>
+	</definition>
+	<definition name="SReceipt" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/SReceiptPG.jsp"/>
+	</definition>
+	<definition name="SStatusPGV" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/SStatusPG.jsp"/>
+	</definition>
+	
+	<definition name="viewSurveyorPaperEnrollmentDtls" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/viewSurveyorPaperEnrollmentDtls.jsp"/>
+	</definition>
+	
+	
+	<definition name="viewAdminSurveyorPassedPaperEnrollmentDtls" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/viewAdminSurveyorPassedPaperEnrollmentDtls.jsp"/>
+	</definition>
+	
+	
+	<definition name="updateSurveyorPaper" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/updateSurveyorPaper.jsp"/>
+	</definition>
+	
+	<definition name="updateAdminSurveyorPaper" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/updateAdminSurveyorPaper.jsp"/>
+	</definition>
+	
+	<definition name="surveyorsAdminSubjectDtlsUpdate" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/surveyorsAdminSubjectDtlsUpdate.jsp"/>
+
+	</definition>
+	
+	
+	<definition name="searchAdminSCandidate" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/searchAdminSCandidate.jsp"/>
+
+	</definition>
+	
+	<definition name="adminSurveyorsPaper" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/AdminSurveyorsPaperEnrollment.jsp"/>
+	</definition>
+	
+	
+	<definition name="viewAdminSurveyorPaperEnrollmentDtls" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/viewAdminSurveyorPaperEnrollmentDtls.jsp"/>
+	</definition>
+	
+	
+	<definition name="AdminSurDDReceipt" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/AdminSurDDReceipt.jsp"/>
+	</definition>
+	
+	<definition name="AdminSurCashReceipt" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/AdminSurCashReceipt.jsp"/>
+	</definition>
+	
+	<definition name="regIdNotvalid" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/regIdNotvalid.jsp"/>
+	</definition>
+	
+	
+		<definition name="profileMapMsg" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/profileMapMsg.jsp"/>
+	</definition>
+	
+	<definition name="SurveyorRegistrationAdmin" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/SurveyorRegistrationAdmin.jsp"/>
+	</definition>
+	
+	<definition name="AdminSurRegCashReceipt" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/AdminSurRegCashReceipt.jsp"/>
+	</definition>
+	
+	<definition name="AdminSurRegDDReceipt" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/AdminSurRegDDReceipt.jsp"/>
+	</definition>
+	
+	<definition name="SurveyorsEmpShow" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/SurveyorsEmpShow.jsp"/>
+	</definition>
+	 
+	 <definition name="SurveyorsSubjectEnrolEmpShow" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/SurveyorsSubjectEnrolEmpShow.jsp"/>
+	</definition>
+	 
+	<!-- Surveyors Enrol/Registration Report For Admin by jaideep -->
+     <definition name="SurveyorsAdminShow" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/SurveyorsAdminShow.jsp"/>
+	</definition>
+	
+	
+	
+	<!--    Surveyor paper delete  -->
+<definition name="paperDeleteSurveyorSearchPage" extends="mainLayout" >
+<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/paperDeleteSurveyorSearchPage.jsp"/>
+</definition>  
+<definition name="paperDeleteSurveyorDetails" extends="mainLayout" >
+<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+<put-attribute name="body" value="/WEB-INF/jsp/registration/surveyors/paperDeleteSurveyorDetails.jsp"/>
+</definition> 
+
+
+</tiles-definitions>

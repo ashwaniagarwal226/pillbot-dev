@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE
+ tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"
+	>
+<tiles-definitions>
+	
+	<definition name="examRegistrationAdmin" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationAdmin/examRegistrationAdmin.jsp"/>
+	</definition>
+	
+	
+	<definition name="adminCurrentUpdatedDtls" extends="mainLayout">
+       <put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+      <put-attribute name="body" value="/WEB-INF/jsp/registrationAdmin/adminCurrentUpdatedDtls.jsp"/>
+    </definition>
+	
+	
+	<definition name="adminenrollDiploma" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationAdmin/EnrolldiplomaAdmin.jsp"/>
+	</definition>
+	
+	
+	<definition name="AdminDDReceipt" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationAdmin/AdminDDReceipt.jsp"/>
+	</definition>
+	
+	
+	
+	<definition name="AdminCashReceipt" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationAdmin/AdminCashReceipt.jsp"/>
+	</definition>
+	
+	
+	
+	<definition name="AdminDDReceipt_Other" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationAdmin/AdminDDReceipt_Other.jsp"/>
+	</definition>
+	
+	
+	
+	<definition name="AdminCashReceipt_Other" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationAdmin/AdminCashReceipt_Other.jsp"/>
+	</definition>
+	
+	<definition name="adminexamRegistrationDtls" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationAdmin/adminexamRegistrationDtls.jsp"/>
+	</definition>
+	
+	
+	
+	<definition name="adminRegistrationDtls" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationAdmin/adminRegistrationDtls.jsp"/>
+	</definition>
+	<definition name="adminRegistrationOnlineDtls" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationAdmin/adminRegistrationOnlineDtls.jsp"/>
+	</definition>
+	
+	
+	
+	
+	<definition name="adminExcessRegFee" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationAdmin/adminExcessRegFee.jsp"/>
+	</definition>
+	
+</tiles-definitions>

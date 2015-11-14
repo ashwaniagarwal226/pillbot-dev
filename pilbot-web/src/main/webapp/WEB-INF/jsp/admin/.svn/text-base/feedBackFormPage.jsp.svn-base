@@ -1,0 +1,203 @@
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+    <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title></title>
+
+<link rel="stylesheet"
+type="text/css"
+href="dojo-release-1.0.0/dijit/themes/tundra/tundra.css"/>
+
+
+<link rel="stylesheet"
+type="text/css"
+href="dojo-release-1.0.0/dijit/themes/tundra/tundra.css"/>
+<link href="../jquery/css/jquery-ui.css" rel="stylesheet" type="text/css"/><style type="text/css">@import url("../jquery/css/jquery-ui.css");</style>
+ <script src="../jquery/js/jquery.min.js"></script><script src="../jquery/js/jquery-ui.min.js"></script><script src="../jquery/js/jquery-ui-1.8.11.custom.min.js"></script>
+   	
+  <script src="/III_WebPortal/calender/datetimepicker_css.js"></script>
+<style type="text/css" media="screen">
+	
+	/*  @import url("<c:url value="/resources/dojo/resources/dojo.css"/>");
+	 @import url("<c:url value="/resources/dijit/themes/tundra/tundra.css"/>"); */
+	
+	
+	 @import url("../styles/style1.css");
+	 @import url("../styles/style2.css");
+</style> 
+<script type="text/javascript">
+
+function formValidation(){
+	 if((document.getElementById('remark').value=="")){
+   	  alert('Please Enter Remarks  ');
+   	 // document.getElementById('activityId').focus();
+   	   document.getElementById('remark').value="";
+   	 
+     }
+    	 
+      
+else
+		{
+	
+    	
+			document.feedBackForm.action = "formSubmit";
+			document.feedBackForm.submit();
+			document.getElementById('button').disabled = true;
+		}
+    }
+
+
+
+
+/* *************** to accept only numbers    ******************* */
+ function onlyNumbers(evt)
+{		
+	
+	var e = event || evt; // for trans-browser compatibility
+	
+	var charCode = e.which || e.keyCode;
+	
+	if ((charCode > 31  ) && (charCode < 48 || charCode > 116) )
+		return false;
+	return true;
+} 
+/* *************** to accept only numbers  and minus sign only  ******************* */
+ function onlyNumbers1(evt)
+{		
+	
+	var e = event || evt; // for trans-browser compatibility
+	
+	var charCode = e.which || e.keyCode;
+	
+	if ((charCode > 31  ) && (charCode < 45 || charCode > 57))
+		return false;
+	return true;
+} 
+
+
+
+function checkMail(){
+
+if((document.getElementById('email').value=="")||(!document.getElementById('email').value.match(/^[-!#$%&'*+/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+/0-9=?A-Z^_a-z{|}~])*@[a-zA-Z](-?[a-zA-Z0-9])*(\.[a-zA-Z](-?[a-zA-Z0-9])*)+$/)))
+    {
+	alert('Please Enter the proper Email address');
+     	 // document.getElementById('activityId').focus();
+     	  // document.getElementById('email').value="" ;
+     	  	  
+     
+    
+}
+else{
+	
+	}
+}
+function checkName(){
+if((document.getElementById('name').value=="")||(!document.getElementById('name').value.match(/^[a-zA-Z ]+$/))){
+	  alert('Please Enter  name in alphabets ');
+	 // document.getElementById('activityId').focus();
+	   //document.getElementById('name').value="";
+	     
+}
+else{
+	}
+}
+</script> 
+<script language="javascript" type="text/javascript">
+
+function imposeMaxLength(Object, MaxLen)
+{
+  return (Object.value.length <= MaxLen);
+}
+
+
+
+       </script>
+
+<title>Admin Stock Update</title>
+<script src="../jquery/js/jquery-ui-1.8.11.custom.min.js"></script></head>
+<body>
+<table border="1" align="center" cellpadding="0" cellspacing="0" class="box" width="800px">
+					<tr>
+						<td align="left" valign="top">
+						<table border="0"
+								cellpadding="2" cellspacing="0" class="table1"  width="800px">
+								
+								<tr>
+									<td><table border="0" cellpadding="0" cellspacing="0"
+											class="fillform" width="800px">
+											<tr style=" width : 846px; "><td>
+											<table border="0" align="left" cellpadding="1"
+													cellspacing="1" class="Table2" width="800px">
+													<tr>
+														<td align="left" class="TableHeader1" colspan="5">FeedBack Form</td>
+													</tr>
+													<tr><td align="right" colspan="5"><font color="red">*</font> Fields are Mandatory</td></tr>
+													
+															<td colspan="4" align="center">
+                                  
+                                  <form:form commandName="feedBackTrans" id="feedBackForm"  name="feedBackForm" >
+                                            <table border="0" cellspacing="0"  class="table1" cellpadding="5" >
+                                            
+                                             
+                                             
+					                          <tr>
+					                          <td align="left" valign="top">Name<span class="mandatory"></span></td>
+                                              	<td align="left" valign="top"><form:input path="name" maxlength="50" id="name" size="27"  onchange="return checkName()"  ></form:input></td> 
+					                          </tr>
+					                          
+		                                          <tr>
+					                          <td align="left" valign="top">Email ID<span class="mandatory"></span></td>
+                                              	<td align="left" valign="top"><form:input path="email"  id="email" maxlength="50"  size="27" onchange="return checkMail()"  ></form:input></td> 
+					                          </tr>
+					                          
+		                                       <tr>
+                                              
+		                                     
+                                              <td align="left" valign="top">Contact No<span class="mandatory"></span></td>
+                                              	<td align="left" valign="top"><form:input path="contactNo"  id="contactNo" maxlength="15" size="27" onkeypress="return onlyNumbers1();" ></form:input></td> 
+		                                       </tr>
+		                                       <tr>
+                                              	 
+		                                   <td align="left" valign="top">Remarks <span class="mandatory">*</span></td>
+                                              	<td align="left" valign="top"><form:textarea path="remark"  id="remark" rows="5"  cols="20" onkeypress="return imposeMaxLength(this, 200);" ></form:textarea><font size="1" color="red">(Max:200 char.)</font></td> 
+		                                       </tr>  
+			
+		                                    <tr>   <td ><font color="red" ><b>${message}</b></font></td></tr>
+		                                   <tr>  
+		                                    
+		                                      <td align="left" valign="top" ><input type="button"id=button value="Submit" onclick="formValidation()"/></td>
+		                               <td align="right" valign="top" ><input type="Button" value="Exit" onclick="window.location.href='<%=request.getContextPath()%>/cmc/formUser';"/></td>
+
+						</tr>
+						  
+</table>
+
+
+</form:form>
+
+
+
+
+</td>
+</table>
+</td>
+</tr>
+
+
+</table>
+</td>
+</tr>
+</table>
+
+
+
+
+
+</body>
+</html>

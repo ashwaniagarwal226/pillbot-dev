@@ -1,0 +1,165 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<title>Insert title here</title>
+<script src="../jquery/js/jquery-ui-1.8.11.custom.min.js"></script></head>
+
+<!-- <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> -->
+<!-- <head> -->
+<!-- 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
+<!-- 	<link rel='shortcut icon' href="/images/favicon.ico"/> -->
+<!-- 	<title>Insurance Institute of India</title> -->
+<!-- 	<link type="text/css" rel="stylesheet" href="/IIIUpdated4oct/resources/dijit/themes/tundra/tundra.css" /> -->
+	
+<!-- 	<style type="text/css" media="screen">	 -->
+<!--         @import url("/IIIUpdated4oct/resources/jquery/css/fa_ui.css"); -->
+<!--         @import url("/IIIUpdated4oct/resources/jquery/css/jquery.ui.all.css"); -->
+<!--         @import url("/IIIUpdated4oct/resources/jquery/development-bundle/themes/base/jquery.ui.all.css"); -->
+<!--         @import url("/IIIUpdated4oct/resources/jquery/css/redmond/jquery-ui-1.8.11.custom.css"); -->
+<!--         @import url("/IIIUpdated4oct/resources/jquery/SpryAssets/SpryMenuBarHorizontal.css"); -->
+<!--         @import url("/IIIUpdated4oct/resources/styles/aadhaar.css");   -->
+<!--         @import url("/IIIUpdated4oct/resources/styles/menu.css")     -->
+<!--     </style> -->
+<!--     <script type="text/javascript" src="/IIIUpdated4oct/resources/styles/jquery.js"></script> -->
+<!--     <script type="text/javascript" src="/IIIUpdated4oct/resources/styles/menu.js"></script> -->
+<!--     <script type="text/javascript" src="/IIIUpdated4oct/resources/dojo/dojo.js"></script> -->
+<!--     <script type="text/javascript" src="/IIIUpdated4oct/resources/spring/Spring.js"></script> -->
+<!--     <script type="text/javascript" src="/IIIUpdated4oct/resources/spring/Spring-Dojo.js"></script> -->
+<!-- 	<script type="text/javascript" src="/IIIUpdated4oct/resources/jquery/SpryAssets/SpryCollapsiblePanel.js"></script> -->
+<!--     <script type="text/javascript" src="/IIIUpdated4oct/resources/jquery/development-bundle/jquery-1.5.1.js"></script> -->
+<!--     <script type="text/javascript" src="/IIIUpdated4oct/resources/jquery/development-bundle/ui/jquery.ui.core.js"></script> -->
+<!--     <script type="text/javascript" src="/IIIUpdated4oct/resources/jquery/development-bundle/ui/jquery.ui.widget.js"></script> -->
+<!--     <script type="text/javascript" src="/IIIUpdated4oct/resources/jquery/development-bundle/ui/jquery.ui.position.js"></script> -->
+<!--     <script type="text/javascript" src="/IIIUpdated4oct/resources/jquery/SpryAssets/SpryMenuBar.js"></script> -->
+
+	
+<!-- <script src="../jquery/js/jquery-ui-1.8.11.custom.min.js"></script></head> -->
+<body class="tundra">
+	<table id="header" style="top: 0">
+		<tr>
+			<td ><img src="/IIIUpdated4oct/images/iiilogo.jpg" alt="" /></td>			
+			<td width="100%"><h1 align="center">Insurance Institute of India</h1></td>
+			<td ><img src="/IIIUpdated4oct/images/iiilogo.jpg" alt="" /></td>
+		</tr>
+	</table>
+
+
+<div id="mbody" style="height:400px; border: thick;">	
+	
+<link rel="stylesheet"
+type="text/css"
+href="dojo-release-1.0.0/dijit/themes/tundra/tundra.css"/>
+<style type="text/css" media="screen">
+	 @import url("<c:url value="/resources/dojo/resources/dojo.css"/>");
+	 @import url("<c:url value="/resources/dijit/themes/tundra/tundra.css"/>");
+</style>    
+	 
+	<script djconfig="parseOnLoad: true"
+ src="<c:url value="/resources/dojo/dojo.js"/>" type="text/javascript"></script>
+	<script type="text/javascript"
+	 src="<c:url value="/resources/spring/Spring.js" />"> </script>
+	<script type="text/javascript"
+	 src="<c:url value="/resources/spring/Spring-Dojo.js" />"></script>
+	<script type="text/javascript">dojo.require("dojo.parser");</script>
+	
+<fieldset align="center">
+     <legend  align="left">Evaluator Details</legend>
+     
+      <form id="evaluatorAttribute" action="addevaluator.htm" method="post">
+
+<table cellpadding="5">
+		      
+		<tr>
+		    
+			<td><label>First Name<font color="red">*</font></label></td>
+			<td><input id="fname" name="first_name" type="text" value="" maxlength="15"/>
+			<script type="text/javascript">
+					Spring.addDecoration(new Spring.ElementDecoration({
+						elementId : "fname",
+						widgetType : "dijit.form.ValidationTextBox",
+						widgetAttrs : { promptMessage : "You must enter First Name",required : true,style : "width: 150px" }}));
+				</script>
+	    </td>
+	    </tr>
+	    <tr>
+	   <td><label>Middle Name<font color="red">*</font></label></td>
+        <td><input id="mname" name="middle_name" type="text" value="" maxlength="15"/>
+			<script type="text/javascript">
+					Spring.addDecoration(new Spring.ElementDecoration({
+						elementId : "mname",
+						widgetType : "dijit.form.ValidationTextBox",
+						widgetAttrs : { promptMessage : "You must enter Middle Name",required : true,style : "width: 150px" }}));
+				</script>
+</td>
+</tr>
+<tr>
+
+        <td><label>Last Name<font color="red">*</font></label></td>
+        <td><input id="lname" name="last_name" type="text" value="" maxlength="15"/>
+			<script type="text/javascript">
+					Spring.addDecoration(new Spring.ElementDecoration({
+						elementId : "lname",
+						widgetType : "dijit.form.ValidationTextBox",
+						widgetAttrs : { promptMessage : "You must enter Last Name",required : true,style : "width: 150px" }}));
+				</script>
+</td>
+</tr>
+<tr>
+<td><label>Date Of Birth<font color="red">*</font></label></td>
+        <td><input id="dob" name="date_of_birth" type="text" value="" maxlength="15"/>
+			<script type="text/javascript">
+					Spring.addDecoration(new Spring.ElementDecoration({
+						elementId : "dob",
+						widgetType : "dijit.form.ValidationTextBox",
+						widgetAttrs : { promptMessage : "You must enter Date of Birth",required : true,style : "width: 150px" }}));
+				</script></tr>
+				
+<!-- <tr> -->
+<!--         <td><label>Gender<font color="red">*</font></label></td> -->
+
+
+<!-- </tr> -->
+
+<tr>
+			<td><label><font color="red" size="3">*</font>Pan Card No:</label></td>
+			<td><input id="pan_card_no " name="pan_card_no" type="text" value="" maxlength="15"/>
+			<script type="text/javascript">
+					Spring.addDecoration(new Spring.ElementDecoration({
+						elementId : "pan_card_no ",
+						widgetType : "dijit.form.ValidationTextBox",
+						widgetAttrs : {  promptMessage : "Pan Card No is a mandatory field",regExp : "^[A-Za-z]{1,20}$",invalidMessage : "Pan Card No supports alphbetic characters with min length 6 and max 20.",required : true,style : "width: 150px" }}));
+				</script></td>
+				
+	</tr>
+<tr>
+<td><H5> Address</H5></td>
+
+<tr>
+			<td><label><font color="red" size="3">*</font>Building :</label></td>
+			<td><input id="bdg" name="building" type="text" value="" maxlength="15"/>
+			<script type="text/javascript">
+					Spring.addDecoration(new Spring.ElementDecoration({
+						elementId : "bdg",
+						widgetType : "dijit.form.ValidationTextBox",
+						widgetAttrs : {  promptMessage : "Building is a mandatory field",regExp : "^[A-Za-z]{1,20}$",invalidMessage : "Building supports alphbetic characters with min length 6 and max 20.",required : true,style : "width: 150px" }}));
+				</script></td>
+				
+	</tr>
+<tr>	
+		
+			<td><label><font color="red" size="3">*</font>Street Name :</label></td>
+			<td><input id="stnm" name="street_name" type="text" value="" maxlength="15"/>
+			<script type="text/javascript">
+					Spring.addDecoration(new Spring.ElementDecoration({
+						elementId : "stnm",
+						widgetType : "dijit.form.ValidationTextBox",
+						widgetAttrs : {  promptMessage : "Street Name is a mandatory field",regExp : "^[A-Za-z]{1,20}$",invalidMessage : "Street Name supports alphbetic characters with min length 6 and max 20.",required : true,style : "width: 150px" }}));
+				</script></td>
+</tr>
+<tr>
+		
+			<td><label><font color="red" size="3">*</font>landmark:</label></td>
+			<td><input id="lnd" name="land_mark" type="text" val>
