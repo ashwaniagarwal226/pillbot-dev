@@ -11,7 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
+//Ashwani Agarwal
 @Entity
 @Table(name = "pillbot_m_prod_type")
 public class ProductType {
@@ -25,7 +25,7 @@ public class ProductType {
 	@Column(name = "is_active", length = 1)
 	private String isActive;
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "productType")
-	private List<SaltBrandDO> saltBrandDO = new ArrayList<SaltBrandDO>();
+	private List<SaltBrandDO> saltBrandDOKaBC = new ArrayList<SaltBrandDO>();
 	
 	public Integer getProdTypeId() {
 		return prodTypeId;
