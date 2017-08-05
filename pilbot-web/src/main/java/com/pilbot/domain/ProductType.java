@@ -11,7 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-//Ashwani Agarwal robin uttappa
+//Ashwani Agarwal robin uttappa opopopopopop
 @Entity
 @Table(name = "pillbot_m_prod_type")
 public class ProductType {
