@@ -25,7 +25,7 @@ public class ProductType {
 	@Column(name = "is_active", length = 1)
 	private String isActive;
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "productType")
-	private List<SaltBrandDO> saltBrandDOKaBC = new ArrayList<SaltBrandDO>();
+	private List<SaltBrandDO> saltBrandDO = new ArrayList<SaltBrandDO>();
 	
 	public Integer getProdTypeId() {
 		return prodTypeId;
