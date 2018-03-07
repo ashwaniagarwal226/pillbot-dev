@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/layouts
+END
+layouts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/layouts/layouts.xml
+END
+layoutMainCPD.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/layouts/layoutMainCPD.jsp
+END
+profileMapLayout.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/layouts/profileMapLayout.jsp
+END
+layoutMainReport.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/layouts/layoutMainReport.jsp
+END
+layoutWelcomeAdmin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/layouts/layoutWelcomeAdmin.jsp
+END

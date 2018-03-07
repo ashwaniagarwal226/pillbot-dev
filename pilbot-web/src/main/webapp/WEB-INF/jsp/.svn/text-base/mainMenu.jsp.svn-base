@@ -1,0 +1,85 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Menu</title>
+
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/styles/cpdmenu.css" />
+
+<script type="text/javascript" src="<%=request.getContextPath()%>/styles/cssverticalmenu.js">
+</script>
+<script src="../jquery/js/jquery-ui-1.8.11.custom.min.js"></script></head>
+<body>
+<div id ="menu8">
+
+<ul>
+  
+<!--  Leave Module -->
+<li><a href="showEmployeeProfile" >Add Employee</a></li>
+<li><a href="updateEmployeeProfileList" >Update Employee Details</a></li>
+<li><a href="superAdminUpdateEmployeeProfileList" >Super Admin Update Employee Details</a></li>
+<li><a href="addDepartment" >Add Department</a></li>
+<li><a href="addDesignation" >Add Designation</a></li>
+<li><a href="addEmployeeDeptDesign">Employee Deptarment Design</a></li>
+<li><a href="leaveMasterForm" >Leave Master Form</a></li>
+<li><a href="leaveRuleMasterForm" >Leave Rules Master Form</a></li>
+<li><a href="applyForLeave">Apply For Leave</a></li>
+<li><a href="addFamilyMemberScreen">Add Family Member</a></li>
+<li><a href="leaveApproveRejectForm" >Leave Approve/Reject Form</a></li>
+<li><a href="encashLeaveApproveRejectForm" >Encash Approve/Reject Form</a></li>
+<!-- <li><a href="leaveApproveRejectForm" >Leave Approve/Reject Form</a></li> -->
+<li><a href="applyLeaveEncashShow" >Apply for leave encash</a></li>
+<li><a href="leaveDeductView" >Leave deduction for late coming</a></li>
+<li><a href="otherBenefitAdd" >Other benefit details addition</a></li>
+<li><a href="adminEmpLeaveForm">Admin Employee Leave Form</a></li>
+<!-- <li><a href="holidayMasterForm" >Holiday Master Form</a></li>
+<li><a href="addEmployee" >Add Employee</a></li>
+
+
+
+<li><a href="addLeave" >Add Leave</a></li>  
+<li><a href="leaveForm">Leave Form </a></li>
+ -->
+<!-- Family Member Master -->
+<!-- <li><a href="addFamilyMemberScreen">Add Family Member</a></li> -->
+<li><a href="updateFamilyMemberScreen">Update Family Member</a></li>
+<!-- Nominee Master -->
+<li><a href="addNomineeScreen">Add Nominee</a></li>
+<li><a href="updateNomineeScreen">Update Nominee</a></li>
+<!-- Employee View -->
+<li><a href="employeeViewForm">Admin Employee Details View</a></li>
+<li><a href="uploadFile">Upload Holiday Detail</a></li>
+<!-- <li><a href="approveAuthortiy">Approve Authority Details Form</a></li> -->
+<li><a href="employeeEducationForm">Employee Education Details</a></li>
+<li><a href="showEmployeeEducationDetailsForm">Show Education Details</a></li>
+<li><a href="employeeDetailswithEducation">Employee with Education Details</a></li>
+<li><a href="UpdateEmployeeEducationDetailsForm">Update Education Details</a></li>
+<li><a href="viewEmployeeAccountDetails"> view Employee Account Details</a></li>
+
+<li><a href="getParticularEmployeeDetails">Employee Details</a></li>
+
+<!-- <li><a href="getParticularEmployeeLeaveDetails">Employee Leave Details</a></li> -->
+<li><a href="viewBalanceLeaves">Leave View Balance</a></li>
+<li><a href="plCalcualtion">Leave Calcualtion</a></li>
+
+<li><a href="updateAppliedLeaveView">Employee view applied/Reject/Approved/Cancellation Leave Details </a></li>
+<li><a href="approvalAuthorityForm">Approval Authority Details</a></li>
+<li><a href="cancellationAppliedLeave">Employee Cancellation for Initiated Leave Request </a></li>
+<li><a href="adminCancellationAppliedLeave">Admin Cancellation for Initiated Leave Request </a></li>
+<li><a href="openingClosingReport">Opening/closing Leave Balance</a></li>
+<li><a href="adminRejectAppliedLeaveList">Second opinion of Admin Rejected Leaves</a></li> 
+
+
+<li><a href="employeeViewFormParticular">Employee Details View</a></li>
+
+<li><a href="viewEmployeeLeaveMailHir">Employee Email Hierarchy</a></li>
+<li><a href="showAdminEmployeeLeaveDetail">Show Admin Employee Leave Detail</a></li>
+
+<li><a href="showAwailedEmployeeLeaveDetail">Show Employee Awailed Leave Detail</a></li>
+
+</ul>
+
+</div>
+</body>
+</html>

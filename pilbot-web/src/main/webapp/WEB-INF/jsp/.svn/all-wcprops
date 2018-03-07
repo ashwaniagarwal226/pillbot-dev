@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/test/!svn/ver/125/III_WebPortal_Leave/WebContent/WEB-INF/jsp
+END
+CPDView.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/CPDView.xml
+END
+candidate-View.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/candidate-View.xml
+END
+mainMenu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/test/!svn/ver/138/III_WebPortal_Leave/WebContent/WEB-INF/jsp/mainMenu.jsp
+END
+inactiveMember.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/inactiveMember.jsp
+END
+adminMenu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/adminMenu.jsp
+END
+PostExamView.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/PostExamView.xml
+END
+test.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/test.jsp
+END
+SurveyorsView.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/SurveyorsView.xml
+END
+UnhandledException.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/UnhandledException.jsp
+END
+FormView.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/test/!svn/ver/137/III_WebPortal_Leave/WebContent/WEB-INF/jsp/FormView.xml
+END
+RegistrationAdminView.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/RegistrationAdminView.xml
+END

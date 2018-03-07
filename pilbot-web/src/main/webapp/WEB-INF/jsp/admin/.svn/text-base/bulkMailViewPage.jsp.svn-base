@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@page contentType="text/html;charset=UTF-8"%>
+<%@page pageEncoding="UTF-8"%>
+<%@ page session="false"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<style type="text/css" media="screen">
+	
+	/*  @import url("<c:url value="/resources/dojo/resources/dojo.css"/>");
+	 @import url("<c:url value="/resources/dijit/themes/tundra/tundra.css"/>"); */
+	
+	
+	 @import url("../styles/style1.css");
+	 @import url("../styles/style2.css");
+</style> 
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script language="JavaScript"><!--
+function formValidation()
+{   if((document.getElementById('from').value=="")||(!document.getElementById('from').value.match(/^[-!#$%&'*+/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+/0-9=?A-Z^_a-z{|}~])*@[a-zA-Z](-?[a-zA-Z0-9])*(\.[a-zA-Z](-?[a-zA-Z0-9])*)+$/))) 
+	//if(document.getElementById("from").value == "" )
+	{	
+	alert('Enter Valid Email Id in From field');
+	document.getElementById("from").focus();
+	return false;
+	}
+	if(document.getElementById("pathId").value == "")
+	{
+	alert('Please Browse Csv File ');
+	document.getElementById("pathId").focus();
+	return false;
+	}
+	document.frm.action="sendBulkEmail?subject="+subject+"from="+from+"body="+body;
+	document.frm.submit();
+}
+
+ 
+--></script>
+<script src="../jquery/js/jquery-ui-1.8.11.custom.min.js"></script></head>
+<body>
+	<form:form modelAttribute="bulkMail" action="sendBulkEmail" name="frm" method="post"
+	enctype="multipart/form-data" onSubmit=" return formValidation(); ">
+	
+	<TABLE border="1" align="left" cellpadding="1" cellspacing="1" class="Table2" width="100%">
+		
+		<tr><td width="80"> Subject:</td><td> <form:input path ="subject" name="subject" id="subject" value="" maxlength="25" ></form:input></td></tr>
+			<tr><td width="80"> From:</td> <td> <form:input path ="from" name="from" id="from" value="personnel@iii.org.in" maxlength="25" readonly="true" ></form:input></td></tr>
+		
+		<tr>
+		
+			<td><form:label for="fileData" path="fileData">To</form:label><br />
+			</td>
+			<td width="100%"><form:input path="fileData" id="pathId" type="file" name="myfile" width="100%" /></td>
+		</tr>
+		    <tr><td width="80"> Body:</td><td><form:textarea  path="body" rows="30" cols="80" name="body" id="body" ></form:textarea></td></tr>
+			<!--<tr><td width="80"> Regards:</td><td> <form:textarea path="regards" id="regards" rows="5" cols="80"  name="regards"></form:textarea></td></tr>
+			
+			-->
+			<tr><th></th>
+		    <th><input type="submit" value="SEND" height="5" width="100"/></th>
+            <tr></tr>			
+      
+		<tr>
+				<td colspan="5" align="center"><b>${msg}</b></td>
+		</tr> 
+	</table>
+	
+	<br>
+</form:form>
+
+</body>
+</html>

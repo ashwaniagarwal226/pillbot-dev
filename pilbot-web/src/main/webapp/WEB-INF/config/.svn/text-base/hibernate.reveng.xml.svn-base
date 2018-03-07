@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-schema="public"
+		match-name="candidate_exam_subject_tran" />
+	<table-filter match-schema="public"
+		match-name="exam_registration_tran" />
+	<table-filter match-schema="public"
+		match-name="payment_mode_master" />
+	<table schema="public" name="candidate_exam_subject_tran">
+		<column name="candidate_exam_sub_id"></column>
+		<column name="bar_code"></column>
+		<column name="credit_points"></column>
+		<column name="crt_user_id"></column>
+		<column name="crt_user_type_id"></column>
+		<column name="exam_date_id"></column>
+		<column name="exam_type_id"></column>
+		<column name="is_present"></column>
+		<column name="sub_language"></column>
+		<column name="login_id"></column>
+		<column name="lot_no"></column>
+		<column name="marks_1"></column>
+		<column name="marks_2"></column>
+		<column name="max_marks"></column>
+		<column name="registration_id"></column>
+		<column name="result_status"></column>
+		<column name="subject_id"></column>
+		<column name="time_stamp"></column>
+		<column name="venue_id"></column>
+		<column name="candidate_exam_id"></column>
+		<column name="center_id"></column>
+		<column name="is_study_mat_appy"></column>
+		<column name="exemption_status"></column>
+		<column name="sub_exam_mode"></column>
+		<column name="subject_fee"></column>
+		<column name="study_material_amt"></column>
+		<column name="exemption_fee"></column>
+	</table>
+	<table schema="public" name="exam_registration_tran">
+		<column name="candidate_exam_id"></column>
+		<column name="registration_id"></column>
+		<column name="payment_mode_id"></column>
+		<column name="demand_draft_no"></column>
+		<column name="demand_draft_date"></column>
+		<column name="study_material_amt"></column>
+		<column name="total_amount"></column>
+		<column name="time_stamp"></column>
+		<column name="exam_type_id"></column>
+		<column name="institute_id"></column>
+		<column name="reg_amt"></column>
+		<column name="total_paper_amt"></column>
+		<column name="excemp_amt"></column>
+	</table>
+</hibernate-reverse-engineering>

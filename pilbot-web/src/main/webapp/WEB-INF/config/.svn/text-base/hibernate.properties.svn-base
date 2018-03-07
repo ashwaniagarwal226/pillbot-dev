@@ -1,0 +1,14 @@
+database properties
+app.jdbc.driverClassName=org.postgresql.Driver
+#app.jdbc.url=jdbc:postgresql://localhost:5432/27jun12
+#app.jdbc.url=jdbc:postgresql://localhost:5432/postgre_test_23june
+#app.jdbc.url=jdbc:postgresql://192.168.2.162:5433/28-01-2013
+#app.jdbc.url=jdbc:postgresql://192.168.2.162:5433/15-02-2013
+app.jdbc.url=jdbc:postgresql://192.168.2.158:5432/01-07-2013
+#app.jdbc.url=jdbc:postgresql://192.168.2.150:5432/26-02-2013
+#app.jdbc.url=jdbc:postgresql://192.168.2.150:5432/06-05-2013
+#app.jdbc.url=jdbc:postgresql://192.168.2.150:5432/21-05-2013
+app.jdbc.username=postgres
+app.jdbc.password=root
+hibernate properties
+hibernate.config=/WEB-INF/config/hibernate.cfg.xml

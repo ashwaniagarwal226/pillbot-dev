@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="cpdMain" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/cpdMain.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="adminMain" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/adminMain.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="cpdPurpose" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/cpdPurpose.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="cpdFeature" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/cpdFeature.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="loginPage" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/mainMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/loginPage.jsp"></put-attribute>
+	</definition>
+	<definition name="adminSearchByRegistration" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/adminSearchByRegistration.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="adminListFromRegistration" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/adminListFromRegistration.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="adminSearchByDate" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/adminSearchByDate.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="adminListFromDate" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/adminListFromDate.jsp"></put-attribute>
+	</definition>
+
+	<definition name="cpdSearchByActivity" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/adminSearchByActivity.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="cpdSearchByActivityResult" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/adminListFromActivity.jsp"></put-attribute>
+	</definition>
+	<definition name="adminSearchByActivityDescription" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/adminSearchByActivityDescription.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="adminListByActivityDescription" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/adminListFromActivityDescription.jsp"></put-attribute>
+	</definition>
+	<definition name="reportSearchPage" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/reportSearchPage.jsp"></put-attribute>
+	</definition>
+	<definition name="adminInsertActivity" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/adminInsertActivity.jsp"></put-attribute>
+	</definition>
+	<definition name="adminActivityDetailPage" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/adminActivityDetailPage.jsp"></put-attribute>
+		</definition>
+		
+		<definition name="detailDescriptionPage" extends="mainLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/adminMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cpd/detailDescriptionPage.jsp"></put-attribute>
+		</definition>
+	
+</tiles-definitions>

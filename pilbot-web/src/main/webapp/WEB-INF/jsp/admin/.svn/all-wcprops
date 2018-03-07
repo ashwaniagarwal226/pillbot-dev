@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/test/!svn/ver/43/III_WebPortal_Leave/WebContent/WEB-INF/jsp/admin
+END
+feedBackReportForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/admin/feedBackReportForm.jsp
+END
+feedBackFormPage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/admin/feedBackFormPage.jsp
+END
+bulkMailViewPage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/test/!svn/ver/43/III_WebPortal_Leave/WebContent/WEB-INF/jsp/admin/bulkMailViewPage.jsp
+END
+formMain.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/admin/formMain.jsp
+END
+examSubject.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/admin/examSubject.jsp
+END
+employeeForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/test/!svn/ver/2/III_WebPortal_Leave/WebContent/WEB-INF/jsp/admin/employeeForm.jsp
+END
